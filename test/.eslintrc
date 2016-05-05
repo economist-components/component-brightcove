@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "strict",
+    "strict-react",
+    "strict/test"
+  ]
+}
