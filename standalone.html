@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bundle.css"/>
+      <style>/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*&#x3D;&quot;language-&quot;],
+pre[class*&#x3D;&quot;language-&quot;] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*&#x3D;&quot;language-&quot;]::-moz-selection, pre[class*&#x3D;&quot;language-&quot;] ::-moz-selection,
+code[class*&#x3D;&quot;language-&quot;]::-moz-selection, code[class*&#x3D;&quot;language-&quot;] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*&#x3D;&quot;language-&quot;]::selection, pre[class*&#x3D;&quot;language-&quot;] ::selection,
+code[class*&#x3D;&quot;language-&quot;]::selection, code[class*&#x3D;&quot;language-&quot;] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*&#x3D;&quot;language-&quot;],
+	pre[class*&#x3D;&quot;language-&quot;] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*&#x3D;&quot;language-&quot;] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) &gt; code[class*&#x3D;&quot;language-&quot;],
+pre[class*&#x3D;&quot;language-&quot;] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) &gt; code[class*&#x3D;&quot;language-&quot;] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+      <style>html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #424242;
+  font-variant-numeric: lining-nums;
+  background: #fafafa;
+}
+.component-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  margin: 2rem;
+}
+.component-title span {
+  font-size: 1.1rem;
+  opacity: .5;
+}
+.component-panel {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),0 1px 5px 0 rgba(0, 0, 0, 0.12),0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background: white;
+  margin: 2rem;
+}
+.component-panel-heading {
+  display: block;
+  background: #E3120B;
+  color: white;
+  margin: -1rem -1rem 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.component-panel-heading a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#mocha {
+  margin: 0 !important;
+  position: relative !important;
+  padding: 1rem 0 0 !important;
+}
+#mocha-stats {
+  position: absolute !important;
+  top: 0 !important;
+}
+</style>
+  </head>
+  <body>
+        <div id="component-preview">
+      <script>
+      window.addEventListener('load', function () {
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {
+                'default': obj
+            };
+        }
+        require('react-dom').render(_interopRequireDefault(require('example')).default,document.getElementById('component-preview'));
+      });
+      </script>
+    </div>
+
+        <script src="./bundle.js"></script>
+
+  </body>
+</html>
