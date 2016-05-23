@@ -51,7 +51,7 @@ export default class Brightcove extends React.Component {
       width = arbitraryDefaultWidth,
       height = arbitraryDefaultHeight,
       secureConnections = true,
-      autoStart = true
+      autoStart = true,
     } = this.props;
     return (
       <div className="brightcove" style={{ width, height }}>
@@ -90,6 +90,6 @@ if (process.env.NODE_ENV !== 'production') {
     secureConnections: React.PropTypes.bool,
     getBrightcoveExperience: React.PropTypes.func,
     onError: React.PropTypes.func,
-    autoStart: React.PropTypes.bool
+    autoStart: React.PropTypes.bool,
   };
 }
