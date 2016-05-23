@@ -38,7 +38,7 @@ import Brightcove from 'component-brightcove';
 return <Brightcove/>;
 ```
 
-For more examples on usage, see [`src/example.es6`](./src/example.es6).
+For more examples on usage, see [`src/example.js`](./src/example.js).
 
 ## Install
 
