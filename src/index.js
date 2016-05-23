@@ -51,6 +51,7 @@ export default class Brightcove extends React.Component {
       width = arbitraryDefaultWidth,
       height = arbitraryDefaultHeight,
       secureConnections = true,
+      autoStart = true
     } = this.props;
     return (
       <div className="brightcove" style={{ width, height }}>
@@ -59,7 +60,7 @@ export default class Brightcove extends React.Component {
           <param name="isUI" value="true" />
           <param name="isVid" value="true" />
           <param name="dynamicStreaming" value="true" />
-          <param name="autoStart" value="true" />
+          <param name="autoStart" value={autoStart} />
           <param name="wmode" value="opaque" />
           <param name="includeAPI" value="true" />
           <param name="cssclass" value="" />
@@ -89,5 +90,6 @@ if (process.env.NODE_ENV !== 'production') {
     secureConnections: React.PropTypes.bool,
     getBrightcoveExperience: React.PropTypes.func,
     onError: React.PropTypes.func,
+    autoStart: React.PropTypes.bool
   };
 }
