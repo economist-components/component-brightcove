@@ -43,7 +43,7 @@ For more examples on usage, see [`src/example.js`](./src/example.js).
 ## Install
 
 ```bash
-npm i -S component-brightcove
+npm i -S @economist/component-brightcove
 ```
 
 ## Run tests
