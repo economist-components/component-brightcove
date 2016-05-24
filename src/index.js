@@ -60,7 +60,7 @@ export default class Brightcove extends React.Component {
           <param name="isUI" value="true" />
           <param name="isVid" value="true" />
           <param name="dynamicStreaming" value="true" />
-          <param name="autoStart" value={autoStart} />
+          <param name="autoStart" value={String(autoStart)} />
           <param name="wmode" value="opaque" />
           <param name="includeAPI" value="true" />
           <param name="cssclass" value="" />
