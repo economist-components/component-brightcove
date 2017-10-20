@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import lodashUniqid from 'lodash.uniqueid';
 
 const arbitraryDefaultWidth = 595;
@@ -80,16 +81,16 @@ export default class Brightcove extends React.Component {
 
 if (process.env.NODE_ENV !== 'production') {
   Brightcove.propTypes = {
-    experienceID: React.PropTypes.string,
-    videoID: React.PropTypes.string.isRequired,
-    playerID: React.PropTypes.string.isRequired,
-    playerKey: React.PropTypes.string.isRequired,
-    labels: React.PropTypes.string.isRequired,
-    width: React.PropTypes.number,
-    height: React.PropTypes.number,
-    secureConnections: React.PropTypes.bool,
-    getBrightcoveExperience: React.PropTypes.func,
-    onError: React.PropTypes.func,
-    autoStart: React.PropTypes.bool,
+    experienceID: PropTypes.string,
+    videoID: PropTypes.string.isRequired,
+    playerID: PropTypes.string.isRequired,
+    playerKey: PropTypes.string.isRequired,
+    labels: PropTypes.string.isRequired,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    secureConnections: PropTypes.bool,
+    getBrightcoveExperience: PropTypes.func,
+    onError: PropTypes.func,
+    autoStart: PropTypes.bool,
   };
 }

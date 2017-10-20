@@ -1,10 +1,13 @@
 import 'babel-polyfill';
 import Brightcove from '../src';
 import React from 'react';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import chai from 'chai';
 import chaiSpies from 'chai-spies';
 import chaiEnzyme from 'chai-enzyme';
 import { mount } from 'enzyme';
+Enzyme.configure({ adapter: new Adapter() });
 chai.use(chaiEnzyme()).use(chaiSpies).should();
 
 describe('brightcove video', () => {
