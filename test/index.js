@@ -9,6 +9,7 @@ import chaiEnzyme from 'chai-enzyme';
 import { mount } from 'enzyme';
 Enzyme.configure({ adapter: new Adapter() });
 chai.use(chaiEnzyme()).use(chaiSpies).should();
+mocha.setup({ globals: [ 'brightcove', 'brightcoveJS', 'checkLoad', 'experienceElement' ] });
 
 describe('brightcove video', () => {
   let getBrightcoveExperience = null;
